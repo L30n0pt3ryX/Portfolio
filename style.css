@@ -21,13 +21,9 @@ nav{
 }
 nav h1 {
     font-family: 'Babylonica', cursive;
-    padding: 10px;
 }
 nav .logo span{
     color: #048df5;
-}
-nav .logo {
-    font-size: 15px;
 }
 nav .onglets{
     margin-top: 3px;
