@@ -11,16 +11,26 @@ body{
 nav{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-bottom: 5px solid #181313;
+    position: sticky;
+    top: 0;
+    background-color: #181313;
+    z-index: 100;
 }
 nav h1 {
     font-family: 'Babylonica', cursive;
+    padding: 10px;
+}
+nav .logo span{
+    color: #048df5;
+}
+nav .logo {
+    font-size: 15px;
 }
 nav .onglets{
     margin-top: 3px;
-    margin-left: 300px;
 }
 nav .onglets a{
     text-decoration: none;
@@ -29,23 +39,54 @@ nav .onglets a{
     border-bottom: 1px solid #000;
     padding-bottom: 5px;
 }
+nav .onglets a:hover{
+    color : #048df5 ;
+}
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
     background: url('header-background.jpg');
     background-size: cover;
-     background-position: top;
+    background-position: top;
     color: #fff;
     padding: 140px;
 }
 header a{
     padding: 10px 20px;
-    color:#000;
+    color:#fff;
     border:none;
     margin-bottom: 30px;
     outline:none;
     font-size: 20px;
     font-family: 'Playfair Display', serif;
     cursor: pointer;
+}
+.about .title {
+    margin-left: 50px;
+    size: 36px;
+}
+.about .title span {
+    color: #048df5;
+}
+.about .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.about .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color:black;
+    color:#fff;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.about .card .right img{
+    height: 444px;
+    width: 355px;
+}
+.skills {
+    padding-bottom: 800px;
 }
