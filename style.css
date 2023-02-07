@@ -30,7 +30,7 @@ nav .onglets{
 }
 nav .onglets a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     margin-right: 10px;
     border-bottom: 1px solid #000;
     padding-bottom: 5px;
@@ -47,22 +47,32 @@ header{
     background-position: top;
     color: #fff;
     padding: 140px;
+    font-size: 30px;
 }
 header a{
     padding: 10px 20px;
+    text-decoration: none;
     color:#fff;
     border:none;
     margin-bottom: 30px;
     outline:none;
     font-size: 20px;
-    font-family: 'Playfair Display', serif;
+    background: #048df5;
+    border-radius: 40px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-.about .title {
+header a:hover{
+    transform: scale(1.1);
+}
+.title {
     margin-left: 50px;
-    size: 36px;
+    font-size: 50px;
 }
-.about .title span {
+.title span {
+    color: #048df5;
+}
+.about h1 span {
     color: #048df5;
 }
 .about .card{
@@ -72,17 +82,51 @@ header a{
     margin-bottom:20px;
 }
 .about .card .left{
-    flex: 0 0 30%;
+    flex: 0 0 60%;
     padding: 20px;
     background-color:black;
     color:#fff;
     margin-top: 5px;
     margin-bottom: 10px;
 }
+.about .card .left h1{
+    font-size: 36px;
+}
+.about .card .left p{
+    font-size: 20px;
+}
+.about .card .left a{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    margin-left: 60px;
+    color: #fff;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    background: #048df5;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.about .card .left a:hover{
+    transform: scale(1.1);
+}
 .about .card .right img{
     height: 444px;
     width: 355px;
+    border-radius: 5px;
+    border-bottom: #048df5 2px solid;
+    box-shadow: #5e9ece 0px 3px 0px;
 }
 .skills {
     padding-bottom: 800px;
+}
+.projects .portfolio-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.projects .portfolio-img{
+    flex: 0 0 33%;
+    max-width: 33%;
 }
